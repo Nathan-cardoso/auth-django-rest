@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",  # add if you want social authentication
+    'drf_spectacular', #
 
 ]
 
@@ -120,8 +121,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.TokenAuthentication",
-    ]
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 SITE_ID = 1
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'API-Auth-Demo',
+    'DESCRIPTION': 'API documentation',
+    'VERSION': '1.0.0',
+}
 
