@@ -4,13 +4,20 @@ Uma das etapas que não pode faltar no desenvolvimento de APIs é a configuraç�
 
 ## Instalação  
 
+```bash
+git clone https://github.com/Nathan-cardoso/auth-django-rest.git
+```
+
 Crie e ative um ambiente virtual:  
 
 ```bash
+
 python3 -m venv venv
+
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate  # Windows
-pip install -r requirements.txt
+
+pip install -r requirements.txt #Baixe as dependências no arquivo requirements.txt
 ```
 
 ## Sites de Apoio
